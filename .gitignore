@@ -27,7 +27,11 @@ idea/
 *.suo
 *.user
 *.sln.docstates
+
+#pycache files
+pycache/
 __pycache__/
+
 # Build results
 
 [Dd]ebug/
@@ -35,7 +39,7 @@ __pycache__/
 build/
 [Bb]in/
 [Oo]bj/
-
+venv/
 # Enable "build/" folder in the NuGet Packages folder since NuGet packages use it for MSBuild targets
 !packages/*/build/
 

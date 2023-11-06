@@ -15,3 +15,7 @@ class BasePage:
 
     def elements_are_visible(self, locator, timeout=5):
         return Wait(self.driver, timeout).until(EC.visibility_of_all_elements_located(locator))
+
+    def remove_footer(self):
+        self.driver.execute_script("document.getElementsByTagName('footer')[0].remove()")
+        self.driver.execute_script("document.getElementById('fixedban').style.display='none'")
