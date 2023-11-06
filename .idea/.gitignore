@@ -192,7 +192,7 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
-
+__pycache__/
 # external components
 node_modules/
 bower_components/
