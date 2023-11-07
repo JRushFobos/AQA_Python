@@ -29,9 +29,8 @@ class FormPage(BasePage):
 
     def form_result(self):
         result_list = self.elements_are_visible(Locators.RESULT_TABLE)
-        #result_text = [i.text for i in result_list]
-        result_text = []
-        for i in result_list:
-            result_text.append(i.text)
-        return result_text
+        return [i.text for i in result_list]
+        # for i in result_list:
+        #     result_text.append(i.text)
+        # return result_text
 
