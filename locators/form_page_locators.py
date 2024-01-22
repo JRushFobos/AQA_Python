@@ -14,3 +14,4 @@ class FormPageLocators:
     CURRENT_ADDRESS = (By.CSS_SELECTOR, "#currentAddress")
     SUBMIT = (By.CSS_SELECTOR, "#submit")
     RESULT_TABLE = (By.XPATH, "//div[@class='table-responsive']//td[2]")
+    GROUP_HEADER = (By.CSS_SELECTOR, "span.group-header > div.header-wrapper > div.header-text > span.pr-1")

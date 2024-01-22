@@ -7,6 +7,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 @pytest.fixture()
 def driver(request):
     headless = request.config.getoption("--headless")
+    options = None
     if headless:
         options = webdriver.ChromeOptions()
         options.add_argument("--headless")

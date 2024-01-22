@@ -4,7 +4,7 @@ from data.data import Person
 from faker import Faker
 
 
-faker = Faker("En")
+faker = Faker()
 
 
 def generated_person():

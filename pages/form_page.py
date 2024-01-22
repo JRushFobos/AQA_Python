@@ -27,6 +27,7 @@ class FormPage(BasePage):
         self.element_is_visible(Locators.SUBMIT).click()
         return person
 
+
     def form_result(self):
         result_list = self.elements_are_visible(Locators.RESULT_TABLE)
         return [i.text for i in result_list]
